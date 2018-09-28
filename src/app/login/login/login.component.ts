@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { LoginModel } from "../../_models/index";
+import { TRANSACTIONS } from "../../_mock/transactions";
 
 @Component({
   selector: "app-login",
@@ -14,6 +15,8 @@ export class LoginComponent implements OnInit {
     username: "Chan Tai Man",
     password: "Password"
   };
+
+  transactions = TRANSACTIONS;
 
   ngOnInit() {}
 }
